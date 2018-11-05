@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<script type="text/javascript" src="validar.js"> 
+	
+</script>
+
+</head>
+
+<body>
+
+    <h3>FORMULÁRIO</h3>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="_css/form2.css"/> 
+ <div class="form-group">
+ 	
+
+    
+    <form id="f" method="post" action="php.php">
+    
+    <fieldset>
+ 			<legend> Dados das PANCs</legend>   <BR />
+        
+        
+         NOME DA PANC:
+        <input type="text" id="nome" name="nome" size="40">
+        
+        <br/><br />
+      
+      <label>NOME CIENTÍFICO:</label> 
+      <input type="nome" name="nome_cientifico" />
+        
+        <BR /><BR />
+        
+    PARTES UTILIZADAS:<select name="partes utilizadas" id="partes utilizadas"  onKeyDown="return enter()">
+               
+               <option value="">Selecione</option>
+              <option value="C" >Caule</option>
+               <option value="F" >Folhas</option>
+               <option value="FL" >Flores</option>
+                <option value="FR" >Frutos</option>
+                <option value="R" >Raízes</option>
+                 <option value="S" >Sementes</option> 
+                 
+             </select>
+        
+        <br/><br/>        
+        
+              
+              DESCRIÇÃO: 
+              <textarea></textarea>
+              <label for="arquivo">Foto</label>
+              <input type="file" name="arquivo">
+              <input name="descrição" type="text" id="descrição" name="descrição" size="" value=""  onKeyDown="return enter()"/>              
+              <BR /><BR />             
+              
+              BENEFICIOS:
+               <input name="beneficios" type="text" id="beneficios"  size="80" value=""  onKeyDown="return enter()"/>
+               <BR /><BR />
+             
+             CULTIVO:
+             <input name="cultivo" type="text" id="cultivo" size="30" maxlength="30" value=""  onKeyDown="return enter()"/>
+             <BR/><BR/>
+            
+    <div class="form-group">
+        <button id="button1id" name="button1id" class="btn btn-success">Quardar</button>
+        <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+    </div>
+            
+             </fieldset>
+           </form>
+         </body>
+         </html>
+             

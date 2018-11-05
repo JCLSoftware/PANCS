@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<script type="text/javascript" src="validar.js"> 
+	
+</script>
+
+</head>
+
+<body>
+
+    <h3>FORMULÁRIO</h3>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="_css/form2.css"/> 
+ <div class="form-group">
+ 	
+
+    
+    <form id="f" method="post" action="php.php">
+    
+    <fieldset>
+ 			<legend> Dados pessoais </legend>   <BR />
+        
+        
+         NOME COMPLETO:
+        <input type="text" id="nome" name="nome" size="40">
+        
+        <br/><br />
+      
+      <label>DATA DE NASCIMENTO:</label> 
+      <input type="date" name="data_nascimento" />
+        
+        <BR /><BR />
+        
+      SEXO:<select name="sexo" id="sexo"  onKeyDown="return enter()">
+               
+               <option value="">Selecione</option>
+               <option value="M" >Masculino</option>
+               <option value="F" >Feminino</option>
+             </select>
+        
+        <br/><br/>        
+                
+        
+         CIDADE: 
+        <input name="cidade" type="text" id="cidade" name="cidade" size="30" value=""  onKeyDown="return enter()"/>
+        <BR /><BR />
+           UF:
+           <select name="uf" id="uf" onKeyDown="return enter()" >
+                  <option value="">Escolha <br/>Estado</option>
+                  
+
+                  <option value="AC" >Acre</option>
+                  <option value="AL" >Alagoas</option>
+                  <option value="AP" >Amapá</option>
+                  <option value="AM" >Amazonas</option>
+                  <option value="BA" >Bahia</option>
+                  <option value="CE" >Ceará</option>
+
+                  <option value="DF" >Distrido Federal</option>
+                  <option value="ES" >Espírito Santo</option>
+                  <option value="GO" >Goiás</option>
+                  <option value="MA" >Maranhão</option>
+                  <option value="MT" >Mato Grosso</option>
+                  <option value="MS" >Mato Grosso do Sul</option>
+
+                  <option value="MG" >Minas Gerais</option>
+                  <option value="PA" >Pará</option>
+                  <option value="PB" >Paraíba</option>
+                  <option value="PR" >Paraná</option>
+                  <option value="PE" >Pernambuco</option>
+                  <option value="PI" >Piauí</option>
+
+                  <option value="RJ" >Rio de Janeiro</option>
+                  <option value="RN" >Rio Grande do Norte</option>
+                  <option value="RS" >Rio Grande do Sul</option>
+                  <option value="RO" >Rondônia</option>
+                  <option value="RR" >Roraima</option>
+                  <option value="SC" >Santa Catarina</option>
+
+                  <option value="SP" >São Paulo</option>
+                  <option value="SE" >Sergipe</option>
+                  <option value="TO" >Tocantins</option>
+              </select>
+              
+              <BR /><bR />
+              
+              CEP: 
+              <input name="cep" type="text" id="cep" name="cep" size="15" value=""  onKeyDown="return enter()"/>              
+              <BR /><BR />             
+              
+              TELEFONE:
+               <input name="fone" type="text" id="fone"  size="15" value=""  onKeyDown="return enter()"/>
+               <BR /><BR />
+               
+          	 CELULAR:
+           	 <input name="celular" type="text" id="celular"  size="15" value=""  onKeyDown="return enter()"/>
+             <br /><br />
+             
+             SENHA PARA ACESSO:
+             <input name="senha" type="password" id="senha" size="7" maxlength="6" value=""  onKeyDown="return enter()"/>
+             <BR/><BR/>
+             CONFIRMAR SENHA:
+             <input name="senha" type="password" id="senha" size="7" maxlength="6" value=""  onKeyDown="return enter()"/>
+             <BR /><BR />
+          
+             <label>E-MAIL:</label> <input type="email" name="email" size="50" maxlength="80" />
+             <BR /> <BR/>
+            
+    <div class="form-group">
+        <button id="button1id" name="button1id" class="btn btn-success">Enviar</button>
+        <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+    </div>
+            
+             </fieldset>
+           </form>
+         </body>
+         </html>
+             

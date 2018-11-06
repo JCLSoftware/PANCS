@@ -20,7 +20,7 @@
  	
 
     
-    <form id="f" method="post" action="php.php">
+    <form id="f" method="post" action="http://tads.jcloud.net.br/Insert/PANCS/Receita/54831.json">
     
     <fieldset>
  			<legend> Dados das Receitas </legend>   <BR />
@@ -31,7 +31,7 @@
               <label for="arquivo">Foto</label>
               <input type="file" name="arquivo">
 
-        <input type="text" id="nome" name="nome" size="40">
+        <input type="text" id="nome" name="name" size="40">
         
         <br/><br />
 
@@ -39,7 +39,7 @@
         <input name="codigo" type="text" id="codigo" name="codigo" size="30" value=""  onKeyDown="return enter()"/>
         <BR /><BR />
         
-      CATEGORIA:<select name="categoria" id="categoria"  onKeyDown="return enter()">
+      CATEGORIA:<select name="category" id="categoria"  onKeyDown="return enter()">
                
                <option value="">Selecione</option>
                <option value="B" >Bolos</option>
@@ -54,26 +54,26 @@
                 
               INGREDIENTES: 
               <textarea></textarea>
-              <input name="ingredientes" type="text" id="igredientes" name="ingredientes" size="150" value=""  onKeyDown="return enter()"/>              
+              <input name="ingredients" type="text" id="igredientes" name="ingredientes" size="150" value=""  onKeyDown="return enter()"/>              
               <BR /><BR />             
               
               MODO DE PREPARO:
               <textarea></textarea>
-               <input name="preparo" type="text" id="preparo"  size="200" value=""  onKeyDown="return enter()"/>
+               <input name="preparation" type="text" id="preparo"  size="200" value=""  onKeyDown="return enter()"/>
                <BR /><BR />
                
           	 RENDIMENTO:
-           	 <input name="rendimento" type="text" id="rendimento"  size="15" value=""  onKeyDown="return enter()"/>
+           	 <input name="yields" type="text" id="rendimento"  size="15" value=""  onKeyDown="return enter()"/>
              <br /><br />
              
              TEMPO DE PREPARO:
              <input name="tempo" type="text" id="tempo" size="10" maxlength="10" value=""  onKeyDown="return enter()"/>
              <BR/><BR/>  
 
-    <div class="form-group">
-        <button id="button1id" name="button1id" class="btn btn-success">Quardar</button>
-        <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
-    </div>
+		    <div class="form-group">
+		        <button id="button1id" name="button1id" class="btn btn-success">Quardar</button>
+		        <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+		    </div>
             
              </fieldset>
            </form>

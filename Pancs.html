@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<h1>{{data.length}}</h1>
+<div ng-repeat="item in pancs">
+{{item.Name}} | {{item.Cultivation}} | {{item.ScientificName}} | {{item.Benefits}} | {{item.UsedParts}} | {{item.Description}}
+</div>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http.get("http://tads.jcloud.net.br/tads/PANCS/Pancs/23456.json")
+  .then(function(response) {
+      $scope.pancs = response.data;
+  });
+});
+</script>
+
+</body>
+</html>
